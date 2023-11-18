@@ -18,5 +18,19 @@ const config: Config = {
   plugins: [
     require("daisyui")
   ],
+
+  daisyui: {
+    themes: [
+      {
+        tokoInTheme: {
+          "primary": "#86A789",
+          "secondary": "#B2C8BA",
+          "accent": "#D2E3C8",
+          "neutral": "#EBF3E8",
+          "base-100": "#ffffff"
+        }
+      }
+    ]
+  }
 }
 export default config
