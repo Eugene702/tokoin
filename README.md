@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TokoIn
 
-## Getting Started
+## Deskripsi
 
-First, run the development server:
+TokoIn adalah proyek pribadi yang saya buat sebagai sarana untuk belajar dan mengasah keterampilan saya dalam pembuatan website. Proyek ini melibatkan penggunaan berbagai teknologi dan alat modern seperti Next.js, Supabase, Prisma, Daisy UI, Auth0, dan Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Saya menggunakan Fake Store API untuk mempelajari dan mempraktikkan bagaimana cara bekerja dengan API dalam konteks pembuatan website. Meskipun "TokoIn" mungkin terdengar seperti platform e-commerce, sebenarnya ini adalah simulasi toko online yang saya gunakan untuk belajar.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tujuan utama dari TokoIn adalah untuk memberikan lingkungan praktis di mana saya dapat menerapkan dan menguji apa yang telah saya pelajari tentang pembuatan website. Dengan demikian, TokoIn adalah representasi dari perjalanan belajar saya dalam web development.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Teknologi yang Digunakan
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: Framework React yang digunakan untuk membangun aplikasi ini.
+- Supabase: Backend sebagai layanan yang digunakan untuk menyimpan data.
+- Prisma: ORM yang digunakan untuk mengelola database.
+- Daisy UI: Library UI yang digunakan untuk mendesain antarmuka pengguna.
+- Auth0: Layanan autentikasi yang digunakan untuk mengelola pengguna.
+- Tailwind CSS: Framework CSS yang digunakan untuk styling.
 
-## Learn More
+## API
 
-To learn more about Next.js, take a look at the following resources:
+Proyek ini menggunakan Fake Store API, sebuah API simulasi toko online yang menyediakan data produk palsu. Fake Store API digunakan dalam proyek ini untuk mempelajari dan mempraktikkan bagaimana cara bekerja dengan API dalam pembuatan website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dengan Fake Store API, "TokoIn" dapat menampilkan berbagai produk dan detailnya, seperti nama produk, deskripsi, harga, dan gambar, seolah-olah ini adalah toko online nyata. Ini memberikan kesempatan untuk belajar bagaimana cara mengambil, menampilkan, dan memanipulasi data dari API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Penggunaan Fake Store API dalam proyek ini juga membantu memahami konsep-konsep penting dalam web development seperti asynchronous programming, error handling, dan data fetching.
 
-## Deploy on Vercel
+## Cara Menjalankan Proyek
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Berikan instruksi langkah-demi-langkah tentang cara menjalankan proyek Anda di lingkungan lokal.
