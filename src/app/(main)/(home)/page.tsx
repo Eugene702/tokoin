@@ -1,7 +1,9 @@
-import BannerRecommendation from "./bannerRecommendation"
-import ProductList from "./productList"
+import dynamic from "next/dynamic"
 
-const page = () => {
+const BannerRecommendation = dynamic(() => import('./bannerRecommendation'))
+const ProductList = dynamic(() => import('./productList'))
+
+const page = async () => {
   return (
     <main>
       <BannerRecommendation />
