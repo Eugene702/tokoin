@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const productCardSide = () => {
-    return <Link href="" className="card card-compact card-side bg-base-100 shadow-xl">
+    return <Link href="/2" className="card card-compact card-side bg-base-100 shadow-xl">
     <figure>
         <Image
             src="https://res.cloudinary.com/ddzlmw5rp/image/upload/v1678305628/samples/ecommerce/accessories-bag.jpg"
