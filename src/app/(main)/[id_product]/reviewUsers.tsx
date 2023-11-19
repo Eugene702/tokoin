@@ -15,19 +15,21 @@ const reviewUsers = () => {
             </button>
         </form>
 
-        <div className="mt-5">
-            <div className="chat chat-start">
-                <div className="chat-image avatar">
-                    <div className="w-10 rounded-full">
-                        <Image
-                            alt="Tailwind CSS chat bubble component"
-                            src="https://res.cloudinary.com/ddzlmw5rp/image/upload/v1678305621/samples/people/smiling-man.jpg"
-                            width={100}
-                            height={100} />
+        <div className="mt-5 space-y-3">
+            {
+                Array.from({ length: 5 }).map((_, index) => <div className="chat chat-start" key={index}>
+                    <div className="chat-image avatar">
+                        <div className="w-10 rounded-full">
+                            <Image
+                                alt="Tailwind CSS chat bubble component"
+                                src="https://res.cloudinary.com/ddzlmw5rp/image/upload/v1678305621/samples/people/smiling-man.jpg"
+                                width={100}
+                                height={100} />
+                        </div>
                     </div>
-                </div>
-                <div className="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
-            </div>
+                    <div className="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
+                </div>)
+            }
         </div>
     </>
 }
