@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 const ProductPhoto = dynamic(() => import('./productPhoto'))
 const DetailProduct = dynamic(() => import('./detailProduct'))
 const ReviewUsers = dynamic(() => import('./reviewUsers'))
+const CartConfirmationModal = dynamic(() => import('./cartConfirmationModal'))
 
 const page = () => {
     return <>
@@ -16,6 +17,7 @@ const page = () => {
             <DetailProduct />
             <ReviewUsers />
         </div>
+        <CartConfirmationModal />
     </>
 }
 
