@@ -1,10 +1,10 @@
 "use client"
 
 import { useEffect } from "react"
-import { useDispatch } from 'react-redux'
-import { setModalRef } from "./store/reducer/cartConfirmationModalReducer"
+import { setModalRef } from "./reducer/cartConfirmationModalReducer"
+import { useDispatch } from "react-redux"
 
-const cartConfirmationModal = () => {
+const CartConfirmationModal = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -24,4 +24,4 @@ const cartConfirmationModal = () => {
     </dialog>
 }
 
-export default cartConfirmationModal
+export default CartConfirmationModal
