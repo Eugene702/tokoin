@@ -5,7 +5,7 @@ import '@splidejs/splide/css'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
-const productPhoto = () => {
+const ProductPhoto = () => {
     useEffect(() => {
         const splide = new Splide('.splide', {
             autoplay: 'pause',
@@ -63,4 +63,4 @@ const productPhoto = () => {
     </section>
 }
 
-export default productPhoto
+export default ProductPhoto

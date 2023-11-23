@@ -1,5 +1,5 @@
 "use client"
-import { showModal } from './reducer/cartConfirmationModalReducer'
+import { showModal } from '@/app/store/reducer/modalReducer'
 import { addProduct } from '@/app/store/reducer/cartReducer'
 import { useDispatch } from 'react-redux'
 
@@ -7,7 +7,7 @@ const TransactionButton = () => {
     const dispatch = useDispatch()
 
     const handleAddToCart = () => {
-        dispatch(showModal())
+        dispatch(showModal("#cart_confirmation_modal"))
         dispatch(addProduct('1'))
     }
 

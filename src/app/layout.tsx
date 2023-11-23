@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import './globals.css'
 import Providers from './store/providers'
+import ProgressBar from 'nextjs-toploader'
 
 export const metadata: Metadata = {
   title: {
@@ -18,8 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ProgressBar 
+          color='#86A789'
+          height={5}
+          crawlSpeed={10} />
         <Providers>
-          { children }
+          {children}
         </Providers>
       </body>
     </html>

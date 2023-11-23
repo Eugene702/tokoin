@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-import cartReducer from './reducer/cartReducer'
 import thunk from 'redux-thunk'
-import cartConfirmationModalSlice from '../(main)/[id_product]/reducer/cartConfirmationModalReducer'
+
+// reducer
+import cartReducer from './reducer/cartReducer'
+import modalReducer from './reducer/modalReducer'
 
 const cartPersistedReducer = persistReducer({
     key: 'cart',
@@ -12,8 +14,8 @@ const cartPersistedReducer = persistReducer({
 
 export const store = configureStore({
     reducer: {
-        _id_product_cartConfirmationModal: cartConfirmationModalSlice,
         cart: cartPersistedReducer,
+        modal: modalReducer
     },
     middleware: [thunk]
 })

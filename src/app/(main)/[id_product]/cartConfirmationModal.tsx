@@ -1,16 +1,4 @@
-"use client"
-
-import { useEffect } from "react"
-import { setModalRef } from "./reducer/cartConfirmationModalReducer"
-import { useDispatch } from "react-redux"
-
 const CartConfirmationModal = () => {
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-        dispatch(setModalRef("#cart_confirmation_modal"))
-    }, [dispatch])
-
     return <dialog id="cart_confirmation_modal" className="modal">
         <div className="modal-box">
             <h3 className="font-bold text-lg">Success!</h3>
