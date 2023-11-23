@@ -1,5 +1,7 @@
-import Navbar from '@/components/navbar'
+import dynamic from "next/dynamic"
 
+const Navbar = dynamic(() => import('@/components/navbar'))
+const Footer = dynamic(() => import('@/components/footer'))
 
 const layout = ({
     children
@@ -9,6 +11,7 @@ const layout = ({
     return <>
         <Navbar />
         { children }
+        <Footer />
     </>
 }
 
