@@ -9,12 +9,12 @@ export const cartConfirmationModalSlice = createSlice({
   name: 'modal-reducer',
   initialState: {},
   reducers: {
-    showModal: (state, action: PayloadAction<string>) => {
+    showModal: (_, action: PayloadAction<string>) => {
         const modalElement: ModalElement = document.querySelector(action.payload) as ModalElement
         modalElement.showModal()
     },
 
-    closeModal: (state, action: PayloadAction<string>) => {
+    closeModal: (_, action: PayloadAction<string>) => {
         const modalElement: ModalElement = document.querySelector(action.payload) as ModalElement
         modalElement.close()
     }
