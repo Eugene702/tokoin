@@ -1,3 +1,10 @@
+import dynamic from "next/dynamic"
+
+const AddShippingFormModal = dynamic(() => import('./addShippingFormModal'))
+const EditShippingFormModal = dynamic(() => import('./editShippingFormModal'))
+const ActionButtonAddress = dynamic(() => import('./actionButtonAddress'))
+const ButtonAddNewAddress = dynamic(() => import('./buttonAddNewAddress'))
+
 const page = () => {
     return <>
         <h1 className="text-2xl font-semibold">Choose a shipping address</h1>
@@ -15,24 +22,18 @@ const page = () => {
 
                         <div className="mt-2">
                             <button className="btn btn-block rounded-full">Shipping here</button>
-                            <div className="mt-2 grid grid-cols-2 items-center gap-x-2">
-                                <button className="btn btn-sm rounded-full btn-ghost">Edit</button>
-                                <button className="btn btn-sm rounded-full btn-ghost">Delete</button>
-                            </div>
+                            <ActionButtonAddress />
                         </div>
                     </span>
                 </label>
             </div>
 
             <div className="divider"></div>
-            <button className="btn btn-block rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                    <path fillRule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clipRule="evenodd" />
-                </svg>
-
-                <span>Add new address</span>
-            </button>
+            <ButtonAddNewAddress />
         </div>
+
+        <AddShippingFormModal />
+        <EditShippingFormModal />
     </>
 }
 
