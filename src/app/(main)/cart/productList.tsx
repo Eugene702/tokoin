@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic"
 
-const ProductCardSide = dynamic(() => import('@/components/productCardSide'))
+const ProductCard = dynamic(() => import('./productCard'))
 
 const productList = () => {
     return <section className="flex flex-col gap-5">
         {
-            Array.from({length: 10}).map((_, index) => <ProductCardSide key={index} />)
+            Array.from({length: 10}).map((_, index) => <ProductCard key={index} />)
         }
     </section>
 }

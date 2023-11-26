@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const productCardSide = () => {
+const productCard = () => {
     return <Link href="/2" className="card card-compact card-side bg-base-100 shadow-xl">
     <figure>
         <Image
@@ -32,4 +32,4 @@ const productCardSide = () => {
 </Link>
 }
 
-export default productCardSide
+export default productCard

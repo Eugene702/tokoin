@@ -21,7 +21,6 @@ const page = () => {
                         <p>Indonesia</p>
 
                         <div className="mt-2">
-                            <button className="btn btn-block rounded-full">Shipping here</button>
                             <ActionButtonAddress />
                         </div>
                     </span>
