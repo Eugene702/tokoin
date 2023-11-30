@@ -5,13 +5,13 @@ import '@splidejs/splide/css'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
-const bannerRecommendation = () => {
+const BannerRecommendation = () => {
     useEffect(() => {
         const splide = new Splide('.splide', {
             autoplay: 'pause',
             perPage: 1,
-            fixedHeight: 250,
-            type: 'loop'
+            type: 'loop',
+            height: 400
         })
 
         splide.on("mounted", () => {
@@ -63,4 +63,4 @@ const bannerRecommendation = () => {
     </section>
 }
 
-export default bannerRecommendation
+export default BannerRecommendation
