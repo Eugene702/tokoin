@@ -6,10 +6,12 @@ export const metadata: Metadata = {
 }
 
 const ProductList = dynamic(() => import('./productList'))
+const ButtonCheckout = dynamic(() => import('./buttonCheckout'))
 
 const page = () => {
-    return <div className="w-11/12 mx-auto my-5">
+    return <div className="w-11/12 mx-auto my-5 lg:w-6/12">
         <ProductList />
+        <ButtonCheckout />
     </div>
 }
 

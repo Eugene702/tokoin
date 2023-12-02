@@ -13,7 +13,7 @@ const CartConfirmationModal = dynamic(() => import('./cartConfirmationModal'))
 const page = () => {
     return <>
         <ProductPhoto />
-        <div className="my-5 w-11/12 mx-auto">
+        <div className="my-5 w-11/12 mx-auto lg:w-9/12">
             <DetailProduct />
             <ReviewUsers />
         </div>

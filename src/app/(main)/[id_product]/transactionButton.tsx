@@ -13,9 +13,9 @@ const TransactionButton = () => {
         dispatch(addProduct('1'))
     }
 
-    return <div className="mt-5">
+    return <div className="mt-5 grid grid-cols-1 gap-2 lg:grid-cols-2">
         <button className="btn btn-block btn-primary text-white rounded-full" onClick={() => route.push("/checkout")}>Buy now</button>
-        <button className="btn btn-block btn-primary btn-outline text-white rounded-full mt-2" onClick={handleAddToCart}>Add to cart</button>
+        <button className="btn btn-block btn-primary btn-outline text-white rounded-full" onClick={handleAddToCart}>Add to cart</button>
     </div>
 }
 

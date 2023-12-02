@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 const BannerRecommendation = () => {
     useEffect(() => {
-        const splide = new Splide('.splide', {
+        const splide = new Splide('#banner-recommendation', {
             autoplay: 'pause',
             perPage: 1,
             type: 'loop',
@@ -21,7 +21,7 @@ const BannerRecommendation = () => {
         splide.mount()
     })
 
-    return <section className="splide" aria-labelledby="carousel-heading">
+    return <section className="splide" aria-labelledby="carousel-heading" id='banner-recommendation'>
         <div className="splide__slider">
             <div className="splide__track">
                 <ul className="splide__list">

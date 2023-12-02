@@ -10,8 +10,13 @@ const ProductPhoto = () => {
         const splide = new Splide('.splide', {
             autoplay: 'pause',
             perPage: 1,
-            fixedHeight: 250,
-            type: 'loop'
+            height: 500,
+            type: 'loop',
+            breakpoints: {
+                640: {
+                    height: 240
+                }
+            }
         })
 
         splide.on("mounted", () => {

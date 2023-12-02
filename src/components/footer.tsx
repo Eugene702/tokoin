@@ -5,7 +5,7 @@ const footer = () => {
             <p className="font-bold">
                 TokoIn
             </p>
-            <p>Copyright ©Eugene Feilian Putra Rangga 2023 - All right reserved</p>
+            <p>Copyright ©2023 Eugene Feilian Putra Rangga - All right reserved</p>
         </aside>
         <nav>
             <div className="grid grid-flow-col gap-4">

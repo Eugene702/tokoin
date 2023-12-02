@@ -13,7 +13,7 @@ const SignOutButton = dynamic(() => import('./signOutButton'))
 
 const page = () => {
     return <Fragment>
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto lg:w-6/12">
             <div className="flex items-center flex-col gap-y-2 w-full mt-5">
                 <div className="avatar">
                     <div className="w-40 rounded-full">
@@ -42,9 +42,9 @@ const page = () => {
                                         fill
                                         alt="Photo Profile"
                                         sizes="100vw"
-                                        className="!relative !object-cover" />
+                                        className="!relative !object-cover w-6/12" />
                                 </figure>
-                                <div className="card-body">
+                                <div className="card-body w-6/12">
                                     <h2 className="card-title">New movie is released!</h2>
                                     <p>Click the button to watch on Jetflix app.</p>
                                 </div>

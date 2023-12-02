@@ -9,7 +9,7 @@ const SearchForm = dynamic(() => import('./searchForm'))
 const ProductList = dynamic(() => import('./productList'))
 
 const page = () => {
-    return <main className="w-11/12 mx-auto my-5">
+    return <main className="w-11/12 mx-auto my-5 lg:w-9/12">
         <SearchForm />
 
         <div className="mt-5">

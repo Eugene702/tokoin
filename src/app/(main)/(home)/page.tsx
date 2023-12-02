@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic"
-import Link from "next/link"
 
 const BannerRecommendation = dynamic(() => import('./bannerRecommendation'))
+const Category = dynamic(() => import('./category'))
 const ProductList = dynamic(() => import('./productList'))
 
 const page = async () => {
@@ -13,15 +13,7 @@ const page = async () => {
 
       <div className="w-full md:w-10/12 md:mx-auto">
         <div className="mt-5">
-          <div className="carousel w-full gap-x-2">
-            {
-              Array.from({ length: 10 }).map((_, index) => <div className="carousel-item" key={index}>
-                <Link href="/category/shose" className={`btn rounded-full ${index == 0 ? 'ml-5' : index == 9 ? 'mr-5' : null}`} key={index}>
-                  <span>Clothes</span>
-                </Link>
-              </div>)
-            }
-          </div>
+          <Category />
         </div>
 
         <div className="my-5 px-3">
