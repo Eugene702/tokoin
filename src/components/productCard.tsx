@@ -9,7 +9,9 @@ const productCard = () => {
                 alt="Shoes"
                 sizes="100vw"
                 fill
-                className="!relative !object-cover" />
+                className="!relative !object-cover"
+                loading="lazy"
+                quality={30} />
         </figure>
         <div className="card-body">
             <h2 className="card-title line-clamp-1">Shoes!</h2>

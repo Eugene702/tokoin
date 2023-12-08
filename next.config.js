@@ -8,7 +8,7 @@ const nextConfig = {
                 port: '',
                 pathname: '/ddzlmw5rp/image/upload/**'
             }
-        ]
+        ],
     }
 }
 

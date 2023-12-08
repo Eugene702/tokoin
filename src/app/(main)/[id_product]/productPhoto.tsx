@@ -26,7 +26,7 @@ const ProductPhoto = () => {
         splide.mount()
     })
 
-    return <section className="splide" aria-labelledby="carousel-heading">
+    return <section className="splide" aria-labelledby="carousel-heading" id='banner-recommendation'>
         <div className="splide__slider">
             <div className="splide__track">
                 <ul className="splide__list">
@@ -36,7 +36,9 @@ const ProductPhoto = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product' />
+                            alt='Product'
+                            quality={30}
+                            priority={true} />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -44,7 +46,9 @@ const ProductPhoto = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 2' />
+                            alt='Product 2'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -52,7 +56,9 @@ const ProductPhoto = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 3' />
+                            alt='Product 3'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -60,7 +66,9 @@ const ProductPhoto = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 4' />
+                            alt='Product 4'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                 </ul>
             </div>

@@ -1,17 +1,17 @@
 "use client"
-import { Fragment, ReactNode } from 'react'
-import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react'
-import { store, persistor } from '.'
 
-const Providers = ({ children }: { children: ReactNode }) => {
-    return <Fragment>
+import { ReactNode } from 'react'
+import { Provider } from 'react-redux'
+import { store } from '.'
+import { SessionProvider } from 'next-auth/react'
+import { Session } from 'next-auth'
+
+const Providers = ({ children, session }: { children: ReactNode, session: Session }) => {
+    return <SessionProvider session={session}>
         <Provider store={store}>
-            <PersistGate loading={null} persistor={persistor}>
-                {children}
-            </PersistGate>
+            {children}
         </Provider>
-    </Fragment>
+    </SessionProvider>
 }
 
 export default Providers

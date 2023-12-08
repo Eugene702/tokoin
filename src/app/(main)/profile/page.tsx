@@ -3,15 +3,34 @@ import { Metadata } from "next"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import Link from "next/link"
+import { getServerSession } from "next-auth/next"
+import { Session } from "next-auth"
 
-export const metadata: Metadata = {
-    title: "Eugene Filian Putra Rangga"
+const getUser = async (): Promise<Session | null> => {
+    const session = await getServerSession()
+    return session
 }
 
-const SignOutConfirmationModal = dynamic(() => import('./signOutConfirmationModal'))
-const SignOutButton = dynamic(() => import('./signOutButton'))
+export const generateMetadata = async (): Promise<Metadata> => {
+    const user = await getUser()
 
-const page = () => {
+    return {
+        title: user != null ? user.user != null ? user.user.name : "Profile User" : "Profile User"
+    }
+}
+
+const SignOutButton = dynamic(() => import('./signOutButton'))
+const SignOutConfirmationModal = dynamic(() => import('./signOutConfirmationModal'))
+
+const page = async () => {
+    const user = await getUser()
+    
+    if(user == null){
+        return <div className="w-full h-screen flex justify-center items-center">
+            <Link href="/auth/signin" className="btn btn-primary text-white rounded-xl">Login first!</Link>
+        </div>
+    }
+
     return <Fragment>
         <div className="w-10/12 mx-auto lg:w-6/12">
             <div className="flex items-center flex-col gap-y-2 w-full mt-5">
@@ -25,7 +44,6 @@ const page = () => {
                             className="!relative !object-cover" />
                     </div>
                 </div>
-
                 <h1 className="text-2xl text-center font-semibold">Eugene Feilian Putra Rangga</h1>
                 <SignOutButton />
             </div>

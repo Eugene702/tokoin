@@ -31,7 +31,9 @@ const BannerRecommendation = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product' />
+                            alt='Product'
+                            quality={30}
+                            priority={true} />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -39,7 +41,9 @@ const BannerRecommendation = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 2' />
+                            alt='Product 2'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -47,7 +51,9 @@ const BannerRecommendation = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 3' />
+                            alt='Product 3'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                     <div className="splide__slide">
                         <Image
@@ -55,7 +61,9 @@ const BannerRecommendation = () => {
                             fill
                             className='!relative !object-cover'
                             sizes='100vw'
-                            alt='Product 4' />
+                            alt='Product 4'
+                            quality={30}
+                            loading='lazy' />
                     </div>
                 </ul>
             </div>
